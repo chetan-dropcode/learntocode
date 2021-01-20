@@ -1,0 +1,386 @@
+/* ########### navbar ############# */
+form{
+    margin-block-end: unset;
+}
+.section{
+    margin-left: 60px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+div.dropdown-menu{
+    margin-left: -5rem;
+    background-color: rgb(36, 67, 110);
+}
+div.dropdown-menu a{
+    color: #fff;
+}
+
+/* ############# account ################## */
+
+div.modal-content{
+    background-color: gray;
+}
+.text-center{
+    color: yellowgreen;
+}
+.fa-facebook-square{
+    color: rgb(8, 32, 111); 
+}
+.fa-facebook-square:hover{
+    color:  rgb(40, 58, 117); ;
+}
+.fa-envelope{
+    color: rgb(196, 7, 7);
+}
+.fa-envelope:hover{
+color: rgb(228, 15, 15);
+}
+
+/* ################################# */
+#prev,#next{
+    opacity: 1;
+    width: unset;
+}
+
+/* #################################### */
+
+.wrapper{
+    
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 15px;
+}
+.item{
+    padding: 15px;
+}
+.owl-theme .owl-nav{
+    display: none;
+}
+.owl-nav,.owl-dot{
+    display: none;
+}
+    
+.img1{
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+}
+.img2{
+    width: 100%;
+    height: 300px;
+    border-radius: 20%;
+}
+.img3{
+    width: 100%;
+    height: 300px;
+    border-radius: 20%;
+}
+#pos{
+    position: unset;
+}
+
+/* vertical */
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.vertical{
+    position:fixed;
+    top: 90;
+    width: 60px;
+    display: flex;
+    height: 100%;
+    background: rgb(0, 25, 76);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.vertical:hover{
+    width: 250px;
+}
+.vertical ul{
+    position: absolute;
+    width: 100%;
+    color: #fff;
+}
+
+.vertical ul li{
+    position: relative;
+    padding-top: 20px ;
+    list-style: none;
+}
+
+.vertical ul li:hover{
+    background: #ea1d63;
+}
+
+.vertical ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.vertical ul li a .icon{
+    position: relative;
+    display: block;
+    padding-left: 15px;
+    height: 30px;
+    text-align: center;
+}
+
+.vertical ul li a .icon .fa,.fab,.fas{
+    font-size: 24px;
+}
+
+.vertical ul li a .title{
+    position: relative;
+    display: block;
+    text-align: start;
+    white-space: nowrap;
+    padding-left: 29px ;
+}
+/* ###################################### */
+
+.slidevideo{
+    margin-top: 94;
+}
+.inner{
+    height: 500px;
+}
+
+/* ################ LATST BY PLAYLIST ##################### */
+
+.two{
+    margin-left: 190px;
+}
+.add{
+    padding: 0px 50px ;
+}
+body{
+    background-color: grey;
+    
+}
+h4{
+    text-align: center;
+    color: #fff;
+  
+}
+#anchor{
+    left: unset;
+    top: 0;
+    right: 5%;  
+}
+h5{
+    color: #fff;
+}
+/* ################## more videos ############################# */
+#prev1,#next1{
+    opacity: 1;
+    width: unset;
+}
+
+/* #################### STARTING SLIDER VIDEO ########################### */
+
+/* #videoSL {
+
+    position: absolute;
+    width: 100%;
+}
+.sinleline {
+    display: inline;
+}
+.wrap .container-slider-video {
+    width: 100%;
+    height: 100%;
+}
+
+#video-slider .carousel-inner .carousel-item {
+    position: relative;
+    height: 80%;
+}
+.content-video {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#brief {
+    color: #ffffff !important;
+} */
+
+/* ######################### HOVERIG ON IMAGES #################################### */
+
+
+.c1
+{
+    display: inline-block;
+    text-decoration: none;
+    background-color: none;
+    color: none;
+    padding: 10px;
+    overflow: hidden;
+    transition: .1s;
+    transition: 0.4s all ease-in-out;
+    
+}
+
+.c1:active
+{
+    transition: translateY(2px);
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+}
+
+.c1:hover
+{
+    transform: scale(1.08);
+}
+
+.splide__slide img {
+	width : 100%;
+    height: 400;
+}
+#video-slider1 video,#video-slider2 video,#video-slider3 video,#video-slider4 video{
+    width: 100%;
+}
+
+.play{
+    top: 10;
+    cursor: pointer;
+}
+.play i{
+    font-size: 150px;
+   
+}
+/* ############## media query############### */
+
+
+
+@media (max-width: 980px){
+    .carousel-inner{
+        height: unset;
+    }
+    .splide__slide img {
+        width : 100%;
+        height: 300;
+    }
+}
+
+@media (max-width: 660px){
+    .splide__arrow{
+        display: unset;
+    } 
+    button.splide__arrow{
+        display: none;
+    }
+
+    .img{
+        display: none;
+    } 
+    #search{
+        font-size: 0rem;
+        font-size: 12px;
+    }
+    .headerlogo{
+        width: 150px;
+    }
+    #brief{
+        display: none;
+    }
+    .slidevideo{
+        margin-top: 94px;
+    }
+    #menuicon{
+        width: 30px;
+    }
+    .bell{
+        width: 30px;
+    } 
+    
+    
+}
+@media (max-width: 499px){
+    .play i{
+        font-size: 100px;
+    }
+}
+@media (max-width: 435px){
+    #search{
+        font-size: 0rem;
+        font-size: 11px;
+    }
+    .headerlogo{
+        width: 140px;
+    }
+
+}
+@media (max-width: 376px){
+    #search{
+        font-size: 0rem;
+        font-size: 8px;
+    }
+    .headerlogo{
+        width: 100px;
+    }
+}
+@media(max-width:1200px){
+    .img1{
+        width: 100px;
+        height: 200px;
+    }
+}
+
+
+@media(max-width:900px){
+    .img1{
+        width: 100px;
+        height: 150px;
+    }
+    .img2{
+        width: 120px;
+        height: 140px;
+    }
+    .img3{
+        width: 200px;
+        height: 140px;
+    }
+    .imglatest{
+        width: 500px;
+        height: 250px;
+    }
+}
+@media(max-width:600px){
+    .img1{
+        width: 100px;
+        height: 100px;
+    }
+    .img2{
+        width: 120px;
+        height: 120px;
+    }
+    .img3{
+        width: 200px;
+        height: 120px;
+    }
+}
+@media(max-width:400px)
+{
+    .img1{
+        width: 100px;
+        height: 130px;
+    } 
+    .img2{
+        width: 100px;
+        height: 130px;
+    }
+    .img3{
+        width: 100px;
+        height: 130px;
+    }
+}
