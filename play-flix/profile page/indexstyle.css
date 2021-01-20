@@ -1,0 +1,60 @@
+body{
+    height: auto;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.seven{
+    display: flex;
+}
+button{
+    background-color: #007bff;
+}
+  
+.active,  .btn:hover{
+  
+      background-color: rgb(2, 48, 71);
+      color: white;
+      
+  }
+/* ####### */
+.avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: -150px;
+  }
+/* ######## avatar ########### */
+textarea.data{
+    background-color: rgb(181, 178, 178);
+    border-radius: 50px;
+    width: 100%;
+}
+.font-weight-bold{
+    font-size: 25px;
+}
+.dk{
+    border-top: 1px solid black;
+}
+/* ############ video section############### */
+p{
+    text-align: center;
+}
+
+/* ####################################### */
+
+@media(max-width:700px){
+    .seven{
+        display: block;
+    }
+    p{
+        text-align: unset;
+    }
+    textarea.data{
+        width: 100%;
+    }
+    .avatar{
+        width: 100px;
+        height: 100px;
+        margin-top: -100px;
+    }
+}
