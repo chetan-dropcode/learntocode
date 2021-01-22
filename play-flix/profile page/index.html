@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    
+    <script src="https://kit.fontawesome.com/f7b0edd311.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="indexstyle.css">
     <!-- Bootstrap CSS -->
@@ -18,8 +18,14 @@
     
     <div class="container-fluid">
       <div>
-        <img class="img-fluid" src="https://melschwartz.com/wp-content/uploads/2016/01/1600-X-400-BANNERS_0002_Meadow-and-mountains.jpg">
+        <img id="output" class="img-fluid" src="https://melschwartz.com/wp-content/uploads/2016/01/1600-X-400-BANNERS_0002_Meadow-and-mountains.jpg">
+        <div style="color: rgb(0, 0, 0);bottom: unset; left: unset; bottom: 85%;right: 5%;" class="carousel-caption  d-md-block">
+          <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+          <p><label for="file" style="cursor: pointer;"><i class="fa fa-pencil fa-2x"></i></label></p> 
+        </div>
       </div>
+
+      
 
       <br>
 
@@ -28,16 +34,30 @@
           <button style="border-radius: 25px;" type="button" class="btn btn-primary  btn-block">CUSTOMIE<br>CHANNEL</button>
         </div>
         <div class="col-4">
-          <img  class=" mx-auto d-block avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ARCtaFmFsHl-5AZ0somjClfxpKlXnIk0Ww&usqp=CAU" alt="Avatar" >
-          <div class="d-md-block">
-            <h4 style="text-align: center;color: #fff;">Zenberry Digitals</h4>
-            <p style="text-align: center; color: #fff;">100 Subscrinbers</p>
+          <img id="imgPreview" class=" mx-auto d-block avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ARCtaFmFsHl-5AZ0somjClfxpKlXnIk0Ww&usqp=CAU" alt="Avatar" >
+          <div   style="color: #fff;bottom: 110%; right: -20%;" class="carousel-caption  d-md-block">
+            <input type="file" name="photograph" id="photo" required="true" style="display: none;" /> 
+            <p><label for="photo" style="cursor: pointer;"><i class="fa fa-pencil fa-2x"></i></label></p>
+          </div>
+         
+          <div class="d-md-block  text-center">   
+            <label style="color: #fff;font-size: 30px;"  class="pull-left">Zenberry Digitals</label>
+            <input class="clickedit" type="text" />
+            <div class="clearfix"></div>
+            <label style="color: #fff; font-size: 20px;" class="pull-left">100 Subscrinbers</label>
+            <input class="clickedit" type="text" />
           </div>
         </div>
         <div class="col-4">
           <button style="border-radius: 25px;" type="button" class="btn btn-primary btn-block">MANAGE<br>VIDEO</button>
         </div>
       </div>
+
+     
+<script>
+   
+</script>
+
 
       <br>
      
@@ -312,7 +332,13 @@
         this.className += " active";
         });
       }
+
+      var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+      };
     </script>
+   
 
 
 
@@ -324,5 +350,52 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"> </script>
   </body>
 </html>
+
+<script>
+
+// text editable code
+var defaultText = 'Zenberry Digitals';
+
+function endEdit(e) {
+var input = $(e.target),
+    label = input && input.prev();
+
+label.text(input.val() === '' ? defaultText : input.val());
+input.hide();
+label.show();
+}
+
+$('.clickedit').hide()
+.focusout(endEdit)
+.keyup(function (e) {
+if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+    endEdit(e);
+    return false;
+} else {
+    return true;
+}
+})
+.prev().click(function () {
+$(this).hide();
+$(this).next().show().focus();
+});
+
+// avtar change code 
+$(document).ready(()=>{ 
+      $('#photo').change(function(){ 
+        const file = this.files[0]; 
+        console.log(file); 
+        if (file){ 
+          let reader = new FileReader(); 
+          reader.onload = function(event){ 
+            console.log(event.target.result); 
+            $('#imgPreview').attr('src', event.target.result); 
+          } 
+          reader.readAsDataURL(file); 
+        } 
+      }); 
+    }); 
+</script>
