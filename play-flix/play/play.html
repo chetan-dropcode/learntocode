@@ -689,8 +689,8 @@
             </div>
             <div class="dropdown">
               <img  class="img" data-toggle="dropdown"  style="margin-right: 10px;" src="profile.png" width="40px" ></img>
-              <div class="dropdown-menu">
-                <a data-target="#login" data-toggle="modal" class="dropdown-item" href="#">Login</a>
+              <div class="dropdown-menu" style="margin-left: -5rem;background-color: rgb(36, 67, 110); ">
+                <a  data-target="#login" data-toggle="modal" class="dropdown-item" href="#">Login</a>
                 <a  data-target="#register" data-toggle="modal" class="dropdown-item" href="#">Register</a>
               </div>
             </div>
@@ -852,10 +852,26 @@
                     <span class="title">Library</span>
                 </a>
             </li>
-            <li>
+            <li class="dropdown" >
                 <a href="#">
                     <span class="icon"><i class="fas fa-photo-video" aria-hidden="true"></i></span>
-                    <span class="title">User Account</span>
+                    <span data-toggle="dropdown" id="dropdownMenuButton" class="title">Library</span>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: blue;">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    
+                    <!-- <div class="dropdown">
+                      <button class="btn  dropdown-toggle title" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div> -->
                 </a>
             </li>
         </ul>

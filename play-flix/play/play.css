@@ -8,10 +8,7 @@ form{
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-div.dropdown-menu{
-    margin-left: -5rem;
-    background-color: rgb(36, 67, 110);
-}
+
 div.dropdown-menu a{
     color: #fff;
 }
