@@ -1,0 +1,28 @@
+div.card{
+    border: unset;
+}
+
+.container{
+    background-color: rgb(198, 201, 204); 
+}
+
+.card-body{
+    background-color:  rgb(198, 201, 204); 
+}
+
+.col-sm-10 input, .col-sm-9 textarea, .col-sm-10 select,.col-sm-9 input,.col-sm-9 select,.col-sm-7 input{
+    border: 2px solid rgb(160, 159, 159);
+    background-color: rgb(198, 201, 204);
+    box-shadow: 2px 2px  grey;   
+    width: 60%;
+ }
+ 
+@media(max-width:800px){
+    .col-sm-10 input, .col-sm-9 textarea, .col-sm-10 select,.col-sm-9 input,.col-sm-9 select,.col-sm-7 input{
+        width: 100%;
+    }
+}
+
+
+
+ 
