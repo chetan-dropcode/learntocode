@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimatedWatch</title>
+    <link rel="stylesheet" href="AnimatedWatch.css">
+</head>
+<body>
+
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Watch</a>
+            <div class="toggle" onclick="toggle();"></div>
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>Futre on<br>your Hand</h2>
+                <p>These 'clock-watches' were fastened to clothing or worn on a chain around the neck.
+                They were heavy drum-shaped cylindrical brass boxes several inches in diameter, engraved
+                and ornamented. They had only an hour hand. The face was not covered with glass, but usually 
+                had a hinged brass cover, often decoratively pierced with grillwork so the time could be 
+                read without opening.</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="imgBx">
+                <img src="watch.png">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a><img src="facebook.png"></a></li>
+            <li><a><img src="twitter.png"></a></li>
+            <li><a><img src="instagram.png"></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        function toggle()
+        {
+            const toggle = document.querySelector('.toggle');
+            const banner = document.querySelector('.banner');
+            toggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
