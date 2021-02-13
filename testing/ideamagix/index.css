@@ -1,0 +1,30 @@
+.container-fluid{
+    padding: 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px; 
+    padding-right: 35px;
+}
+.navbar{
+    padding: 0 0.5rem;
+}
+/* image top */
+.carousel-caption {
+    right: unset;
+    left: unset;
+    text-align: unset;
+    padding-left: 35px;
+    top: 0;
+}
+
+/* working  */
+
+.row{
+    margin-left:0 ;
+    margin-right: 0;
+    align-items: center;
+}
+.col-md-6 img{
+    padding: 50px;
+}
