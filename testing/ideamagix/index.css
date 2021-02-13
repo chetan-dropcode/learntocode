@@ -1,4 +1,4 @@
-.container-fluid{
+#header{
     padding: 0;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -18,13 +18,16 @@
     top: 0;
 }
 
-/* working  */
-
-.row{
-    margin-left:0 ;
-    margin-right: 0;
+/* treatment overview */
+.treatment{
     align-items: center;
 }
-.col-md-6 img{
-    padding: 50px;
+
+/* form  */
+.card h1{
+    color: blue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card{
+    box-shadow: 1px 1px 6px;
 }
