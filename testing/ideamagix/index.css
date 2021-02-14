@@ -275,6 +275,10 @@ button.splide__arrow{
     border-radius: 50%;
 }
 
+button.splide__pagination__page.is-active{
+    background: blue;
+}
+
 @media(max-width:900px){
     .bottom{
         background-color:#007bff ;
