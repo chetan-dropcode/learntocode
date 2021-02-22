@@ -11,14 +11,17 @@
     <link rel="stylesheet" href="owl.theme.default.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 </head>
 <body >
 
     <header>
-        <div class="container-fluid" id="header">
+        <div class="container-fluid " id="header">
             <!-- header -->
 
-            <div class="container-fluid row topview">
+            <!-- <div class="container-fluid row topview">
                 <div class="col-2 logo">
                     <img width="50" src="profile.png">Company
                 </div>
@@ -58,10 +61,10 @@
                 <div class="col-2 flag">
                     <img width="100px" height="60px" src="India.png">
                 </div>
-            </div>
+            </div> -->
 
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -104,7 +107,7 @@
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="d-block w-100" height="350px" src="nasa.jpg" alt="First slide">
+                    <img class="d-block w-100" height="600px" src="nasa.jpg" alt="First slide">
                     <div class="carousel-caption d-md-block">
                         <br>
                         <div class="arrow">
@@ -168,10 +171,10 @@
     </header>
 
      <!-- treatment -->
-    <div class="container-fluid" >
+    <div class="container-fluid " >
         <!-- Treament overflow -->
-        <div class="row treatment">
-            <div class="col-sm-12 col-md-6 content ">
+        <div class="row treatment ">
+            <div class="col-sm-12 col-md-6 content part-1">
                 <h2>Treatment Overview</h2>
                 <p>
                     There are many variations of passages of , but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
@@ -183,7 +186,7 @@
                     Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
                 </p>
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6 part-2">
                 <img class="img-fluid"  src="working.jpg">
             </div>
         </div>
@@ -550,7 +553,7 @@
 
     <br>
     
-    <div class="container-fluid slider">
+    <div class="container-fluid slider part-2">
         <h5 class="text-center doctor"><i>Doctors</i></h5>
         <h3 class="text-center">Top Orthopaedic <span class="doctor1">Doctors</span></h3>
         <br>
@@ -630,7 +633,7 @@
         </div>
     </div>
 
-    <div class="container-fluid slider2">
+    <div class="container-fluid slider2 part-3">
         <p class="text-center Hospital"><i>Hospitals</i></p>
         <h3 class="text-center">Recommended <span class="hospital1">Hospitals</span></h3>
         <div class="owl-carousel owl-theme">
@@ -844,6 +847,21 @@
 		}
 	} ).mount();
 } )
+
+
+// var waypoint = new Waypoint({
+//   element: document.getElementById('px-offset-waypoint'),
+//   handler: function(direction) {
+//     notify('I am 20px from the top of the window')
+//   },
+//   offset: 20 
+// })
+
+// $(document).ready(function(){
+//     $('.part-1').waypoint(function(direction){
+//         $('.part-1').addClass('animated zoomIn')
+//     })
+// });
     </script>
 
 
@@ -854,6 +872,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
     loop:true,
@@ -871,6 +890,26 @@
         }
     }
 })
+
+$(document).ready(function(){
+    $('.part-1').waypoint(function(direction){
+        $('.part-1').addClass('animated fadeInUp')
+    },{
+        offset:'500px'
+    });
+
+    $('.part-2').waypoint(function(direction){
+        $('.part-2').addClass('animated zoomIn')
+    },{
+        offset:'500px'
+    });
+
+    $('.part-3').waypoint(function(direction){
+        $('.part-3').addClass('animated zoomIn')
+    },{
+        offset:'500px'
+    });
+});
     </script>
 </body>
 </html>

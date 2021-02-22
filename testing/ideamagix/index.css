@@ -1,3 +1,26 @@
+/* body{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
+
+.part-1,.part-2,.part-3{
+    opacity: 0;
+}
+.part-1.animated,.part-2.animated,.part-3.animated{
+    opacity: 1;
+}
+html {
+    scroll-behavior: smooth;
+  }
 #header{
     padding: 0;
 }
