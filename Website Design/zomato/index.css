@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Animaton */
+.part-1,.part-2,.part-3,.part-4,.part-5,.part-6,.part-7{
+    opacity: 0;
+}
+.part-1.animated,.part-2.animated,.part-3.animated,.part-4.animated,.part-5.animated,.part-6.animated,.part-7.animated{
+    opacity: 1;
+}
+
+/* food image */
+.food{
+    height: 720px;
+}
+.App{
+    right: unset;
+    top: 0;
+}
+.Login{
+    left: unset;
+    right: 15%;
+    top: 0;
+}
+.LR{
+    display: inline-flex;
+}
+.l1{
+    padding-right: 15px;
+}
+h5 a{
+    color: #fff;
+    text-decoration: none;
+}
+h5 a:hover{
+   color: #fff;
+   text-decoration: none;
+}
+.title{
+    top: 20%;
+}
+.title1{
+    font-size: 10rem;
+    font-family: Berkhire Swash;
+}
+.title2{
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+}
+
+.searchbar{
+    top: 70%;
+}
+.boxcontainer{
+    width: 100%;
+    height: 45px;
+    border: 2px solid #fff;
+    padding: 0px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.elements{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.search{
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #424242;
+    font-weight: 500;
+}
+.search:focus{
+    outline: none;
+}
+.fa-search{
+    color: #424242;
+    font-size: 20px;
+}
+
+/* order food */
+.container{
+    padding: 25px 0;
+}
+.card{
+    border: none;
+}
+.card-body{
+    padding: 0;
+    border: 1px solid #4242424c;
+    border-radius: 15px;
+    transition: 0.2s; 
+}
+.card-body:hover{
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+.img-fluid{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.order{
+    text-align: center;
+    padding: 15px 0;
+}
+.my-row{
+    margin: 0;
+}
+.my-col{
+    padding-bottom: 20px;
+}
+/* collection */
+
+.para1{
+    font-size: 50px;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+.para2{
+    font-size: 20px;
+}
+.span1{
+    font-size: 17px;
+    float: right;
+    color: rgb(245, 112, 130);
+}
+.span2{
+    display: none;
+}
+.fa-arrow-right{
+    font-weight: 100;
+    color: rgb(245, 112, 130);
+}
+.my-img{
+    border-radius: unset;
+    border-radius: 10px;
+}
+
+.my-card-body{
+    border: none;
+}
+.my-card-body:hover{
+    transform: none;
+}
+.collection{
+    text-align: left;
+    bottom: 0;
+    position: fixed;
+}
+.my-a{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* My app */
+
+.my-app{
+    margin-top: 50px;
+}
+.justify-content-center{
+    background-color: rgb(250, 247, 243);
+}
+
+/* explore */
+
+.my-para{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Berkhire Swash;
+    color: #8e8686;
+    line-height: 2rem;
+}
+.my-para1{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Berkhire Swash;
+    color: #8e8686;
+}
+.my-fluid{
+    padding: 0;
+}
+
+/* footer */
+.my-para2{
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Berkhire Swash;
+    color: #8e8686;
+    line-height: 0.9;
+}
+.my-col1{
+    padding-bottom: 10px;
+}
+.social{
+    margin-left: 20px;
+}
+.social i{
+    font-size: 20px;
+    padding-right: 20px;
+    color: #000;
+}
+
+
+
+
+
+/* media query */
+
+@media(max-width:900px){
+    .food{
+        height: 100%;
+    }
+    .title1{
+        font-size: 3.5rem;
+    }
+    .title{
+        top: 10%;
+    }
+    .title2{
+        font-size: 1rem;
+    }
+    .explore{
+        padding: 10px;
+    }
+    .my-fluid{
+        padding: 0 10px;
+    }
+    .my-h5{
+        padding: 0 10px;
+    }
+    .myh5{
+        font-size: 15px;
+    }
+    .boxcontainer{
+        height: 35px;
+    }
+    .para1{
+        font-size: 35px;
+        padding: 0 30px;
+    }
+    .span1{
+        display: none;
+    }
+    .para2{
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    .span2{
+        display: block;
+        padding: 0 30px;
+        font-size: 18px;
+        color: rgb(245, 112, 130);
+        cursor: pointer;
+    }
+
+}
+
+
+
+
