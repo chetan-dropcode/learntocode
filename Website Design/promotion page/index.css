@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #### animation #####*/
+
+.part-1,.part-2,.part-3,.part-4,.part-5,.part-6,.part-7{
+    opacity: 0;
+}
+.part-1.animated,.part-2.animated,.part-3.animated,.part-4.animated,.part-5.animated,.part-6.animated,.part-7.animated{
+    opacity: 1;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 800px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255) url(up-arrow.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.scrollTop.active{
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ########## header ########## */
+.logo{
+    background-color: rgb(211, 211, 211);
+}
+.logo2{
+    display: none;
+}
+.logo .promotion{
+    width: 150px;
+}
+.login{
+    padding: 5px;
+}
+.flag{
+    width: 100px;
+    padding-right: 10px;
+}
+.fa-shopping-cart{
+    color: #094b85;
+    font-size: 25px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.search{
+    display: flex;
+}
+.login a{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(204, 10, 10);
+    text-decoration: none;
+}
+
+/*signin */
+.modal-title{
+    font-size:25px ;
+    color: #000;
+    font-weight: bold;
+}
+.sign{
+    padding: 0 40px;
+    box-sizing: unset;
+}
+.sign .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:focus ~ span::before{
+    width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+.register_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+.register_link a{
+    color: #2691d9;
+    text-decoration: none;
+}
+.register_link a:hover{
+    text-decoration: underline;
+
+}
+.rsub{
+    margin-bottom: 15px;
+}
+
+/* navbar */
+
+.navbar{
+    background: rgba(216, 226, 226, 0.53);
+}
+.loginnav{
+    display: none;
+}
+.nav-item{
+    padding-right: 60px;
+}
+.nav-item a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+.links{
+    width: 50px;
+}
+.name{
+   display: flex;
+}
+.name .text{
+    padding: 10px;
+    font-weight: bold;
+}
+.text:hover{
+    color: #fff; 
+}
+/* whats hot right now  */
+
+.whats{
+    text-align: center;
+    background-color: rgb(235, 24, 24);
+    color: #fff;
+    padding: 15px;
+}
+.owl-carousel{
+    background: #131313;
+    border-radius: 20px;
+}
+
+.card{
+    border: none;
+    cursor: pointer;
+    background: #131313;
+}
+/* .card:hover{
+    background-color: blue;
+} */
+/* .card-body{
+    background-color: rgb(214, 212, 212);
+    border-radius: 15px;
+} */
+
+.card-body h5,p{
+    text-align: center;
+}
+.price{
+    font-size: 25px;
+    color: rgb(221, 19, 19);
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    display: none;
+}
+
+/* free hours */
+
+.free{
+    display: flex ;
+}
+.content{
+    padding: 15px;
+}
+.info{
+    text-align: left;
+    font-size: 20px;
+}
+.shipping{
+    color: rgb(221, 19, 19);
+    font-weight: bold;
+}
+.bdright{
+    border-right: 3px solid gray;
+}
+.bddown{
+    border-bottom: 1px solid gray;
+    padding: 15px;
+}
+
+/* why to choose promotion */
+.list li{
+    list-style: none;
+    font-size: 20px;
+    color: rgb(221, 19, 19);
+}
+.choose{
+    padding:15px 5px;
+    background-color: rgba(211, 211, 211, 0.374);
+}
+
+/* footer */
+
+.footer{
+    background-color: #094b85;
+    padding: 10px;
+}
+.finfo{
+    color: rgba(255, 255, 255, 0.789);
+    text-align: left;
+}
+.partner{
+    padding: 10px 0;
+    cursor: pointer;
+}
+.payment{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.fa-facebook-official,.fa-twitter,.fa-instagram,.fa-linkedin-square,.fa-youtube-play,.fa-pinterest-p{
+    color: #fff;
+    font-size: 20px;
+    padding-right:15px;
+}
+.copyright{
+    text-align: center;
+    color: #fff;
+    background-color: #0b4272;
+    padding: 10px;
+}
+
+/* mobile */
+@media(max-width:995px){
+    .loginnav{
+        display: block;
+    }
+    .logo2{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .bdright{
+        border: unset;
+    }
+    .text-dark,.text-primary{
+        font-size: 20px;
+    }
+    .free{
+        display: unset;
+    }
+    .productimg{
+        width: 100%;
+        height: 50vh;
+    }
+    .whats{
+        font-size: 20px;
+    }
+    .clock{
+        display: block;
+        margin: auto;
+    }
+    
+}
